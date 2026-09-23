@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../sdk/dotnet/SlotSdk/SlotSdk.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../math/neon_fortune.json" Link="neon_fortune.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

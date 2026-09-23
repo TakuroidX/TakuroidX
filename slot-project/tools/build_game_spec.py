@@ -151,7 +151,7 @@ def screen(wb):
         ("UI-03", "Credit display", "Top right (760, 485)", "CREDIT + balance (comma-separated)", "Counts up by the win amount"),
         ("UI-04", "Reel area", "Center (0, 40) 1164x600", "5 reels x 3 rows. Cell 200x200, reel spacing 16, frame glow", "Masked outside"),
         ("UI-05", "Line indicators", "Left and right of the reel area", "Line number markers 1–20. Winning lines light up", ""),
-        ("UI-06", "Message bar", "(0, -300) 1164x56", "Idle: GOOD LUCK / on a win: line details / FS: messages", ""),
+        ("UI-06", "Message bar", "(0, -318) 1164x56", "Idle: GOOD LUCK / on a win: line details / FS: messages", ""),
         ("UI-07", "PAYTABLE button", "Bottom left", "Opens the paytable overlay", "Only while idle"),
         ("UI-08", "BET −/+ buttons", "Bottom", "Moves through the 4 levels (no wraparound)", "Disabled during spins and FS"),
         ("UI-09", "Bet display", "Bottom", "Total bet (line bet x 20)", ""),
@@ -195,7 +195,7 @@ def flow(wb):
         ("S8 FS end", "TOTAL WIN banner (3.0s, tap to skip). Adds the total", "→ S1"),
     ]
     table(ws, 3, ["State", "What happens", "Transition condition → next"], data, [18, 70, 60], 32)
-    ws["A14"] = "Auto play stop conditions: AUTO pressed again / insufficient balance / BIG WIN or above / free spins triggered (auto continues after FS ends)"
+    ws["A14"] = "Auto play stop conditions: AUTO pressed again / insufficient balance / BIG WIN or above in the base game. When free spins trigger, the FS play automatically and auto play resumes after they end."
     ws["A14"].font = S.BOLD
 
 

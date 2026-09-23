@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlotSdk.Tests", "dotnet\Slo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlotSdk.Simulator", "dotnet\SlotSdk.Simulator\SlotSdk.Simulator.csproj", "{4C15CABF-C517-4985-AC80-A3938A882FA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSlot", "..\samples\ConsoleSlot\ConsoleSlot.csproj", "{0D3E4206-0029-4BFA-91E5-F1C50A347A45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{4C15CABF-C517-4985-AC80-A3938A882FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C15CABF-C517-4985-AC80-A3938A882FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C15CABF-C517-4985-AC80-A3938A882FA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D3E4206-0029-4BFA-91E5-F1C50A347A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D3E4206-0029-4BFA-91E5-F1C50A347A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D3E4206-0029-4BFA-91E5-F1C50A347A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D3E4206-0029-4BFA-91E5-F1C50A347A45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1D151901-FE14-436D-A728-93BD1FAF6FC6} = {D5B78F0C-482B-4A79-B5FD-8BAF5B0126F5}
