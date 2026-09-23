@@ -1,0 +1,42 @@
+name: Unity CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  meta-check:
+    name: .meta consistency
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/check-meta.sh
+
+  # GameCI (https://game.ci) runs tests. It requires the UNITY_LICENSE / UNITY_EMAIL / UNITY_PASSWORD secrets.
+  # After setting the secrets, set the repository variable UNITY_CI_ENABLED to true to enable this job.
+  tests:
+    name: Unity tests (${{ matrix.testMode }})
+    if: ${{ vars.UNITY_CI_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        testMode: [editmode, playmode]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/cache@v4
+        with:
+          path: Library
+          key: Library-${{ hashFiles('Packages/packages-lock.json') }}
+          restore-keys: Library-
+      - uses: game-ci/unity-test-runner@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          testMode: ${{ matrix.testMode }}
+          githubToken: ${{ secrets.GITHUB_TOKEN }}

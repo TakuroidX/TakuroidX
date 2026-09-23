@@ -13,8 +13,10 @@ as Markdown, it ships.
 
 ## Working in this repo
 
-- The only file under version control is `README.md`. Changes are pure content
-  edits; there is nothing to build, run, or test.
+- The profile deliverable is `README.md`; changes to it are pure content edits.
+- Side projects also live here in subdirectories (not rendered on the profile):
+  `unity-claude-starter/` (Unity × Claude Code starter kit, has its own
+  CLAUDE.md) and `slot-project/` (slot machine project; see its `PLAN.md`).
 - Preview rendering as GitHub-flavored Markdown. GitHub strips/sanitizes some
   HTML, so prefer Markdown over raw HTML where possible (the existing file uses
   `<sub>` for fine print, which GitHub does allow).
