@@ -1,0 +1,9 @@
+# .NET
+bin/
+obj/
+*.user
+TestResults/
+# Python
+__pycache__/
+# LibreOffice lock files
+.~lock.*#

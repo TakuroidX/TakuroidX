@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(./scripts/unity-compile.sh:*)",
+      "Bash(./scripts/unity-test.sh:*)",
+      "Bash(./scripts/check-meta.sh:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git mv:*)"
+    ],
+    "ask": [
+      "Bash(./scripts/unity-build.sh:*)"
+    ],
+    "deny": [
+      "Read(./Library/**)",
+      "Read(./Temp/**)",
+      "Read(./obj/**)",
+      "Read(./Builds/**)",
+      "Read(./UserSettings/**)",
+      "Edit(./Library/**)",
+      "Edit(./Temp/**)",
+      "Edit(**/*.meta)",
+      "Write(**/*.meta)"
+    ]
+  }
+}

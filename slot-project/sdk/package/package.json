@@ -1,0 +1,8 @@
+{
+  "name": "com.takuroidx.slotsdk",
+  "version": "1.0.0",
+  "displayName": "Slot SDK",
+  "description": "Engine-independent slot math SDK: math model loading, RNG, spin evaluation, game state, theoretical calculation and simulation.",
+  "unity": "2021.3",
+  "author": { "name": "TakuroidX" }
+}

@@ -7,14 +7,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 This is a **GitHub profile repository** (`TakuroidX/TakuroidX`). GitHub renders
 the root `README.md` directly on the profile page at https://github.com/TakuroidX.
 
-There is no application code, build system, test suite, linter, or CI here. The
-sole deliverable is `README.md`. Edits to it are the work — when it looks right
-as Markdown, it ships.
+The profile page itself is just `README.md`: edits to it are the work — when it
+looks right as Markdown, it ships. The side-project subdirectories below have
+their own build/test tooling.
 
 ## Working in this repo
 
-- The only file under version control is `README.md`. Changes are pure content
-  edits; there is nothing to build, run, or test.
+- The profile deliverable is `README.md`; changes to it are pure content edits.
+- Side projects also live here in subdirectories (not rendered on the profile):
+  `unity-claude-starter/` (Unity × Claude Code starter kit, has its own
+  CLAUDE.md) and `slot-project/` (Neon Fortune slot: math SDK, Excel specs,
+  Unity game; has its own CLAUDE.md and README.md).
+- `.github/workflows/slot-project.yml` runs the slot SDK tests and math
+  verification on changes under `slot-project/` only.
 - Preview rendering as GitHub-flavored Markdown. GitHub strips/sanitizes some
   HTML, so prefer Markdown over raw HTML where possible (the existing file uses
   `<sub>` for fine print, which GitHub does allow).
