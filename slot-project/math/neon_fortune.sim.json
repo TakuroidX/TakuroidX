@@ -1,0 +1,181 @@
+{
+  "model": {
+    "id": "neon_fortune",
+    "version": "1.0.0"
+  },
+  "generatedAt": "2026-09-23T11:55:45Z",
+  "verificationPassed": true,
+  "theory": {
+    "lineRtp": 0.7599589205347788,
+    "scatterRtp": 0.017519883217557635,
+    "baseRtp": 0.7774788037523364,
+    "triggerProbability": 0.007249823819591261,
+    "expectedFreeSpins": 10.781650679076835,
+    "freeSpinRtp": 0.1823150504762578,
+    "totalRtp": 0.9597938542285942
+  },
+  "monteCarlo": {
+    "rounds": 100000000,
+    "seed": "20260923",
+    "rtp": 0.960202916,
+    "rtp95HalfWidth": 0.0006364608539123654,
+    "baseRtp": 0.7777993715,
+    "freeSpinRtp": 0.1824035445,
+    "hitFrequency": 0.53846567,
+    "triggerFrequency": 0.00725356,
+    "avgFreeSpinsPerTrigger": 10.776060306938938,
+    "avgFeatureWinMultiple": 25.146761659102562,
+    "stdDev": 3.247249254654926,
+    "maxRoundWinMultiple": 333.05,
+    "elapsedSeconds": 10.0052934,
+    "buckets": [
+      {
+        "label": "0 (no win)",
+        "min": 0,
+        "count": 46153433,
+        "probability": 0.46153433
+      },
+      {
+        "label": "0-1x",
+        "min": 1E-09,
+        "count": 29158226,
+        "probability": 0.29158226
+      },
+      {
+        "label": "1-2x",
+        "min": 1,
+        "count": 12668461,
+        "probability": 0.12668461
+      },
+      {
+        "label": "2-5x",
+        "min": 2,
+        "count": 8595210,
+        "probability": 0.0859521
+      },
+      {
+        "label": "5-10x",
+        "min": 5,
+        "count": 2248187,
+        "probability": 0.02248187
+      },
+      {
+        "label": "10-20x",
+        "min": 10,
+        "count": 665762,
+        "probability": 0.00665762
+      },
+      {
+        "label": "20-50x",
+        "min": 20,
+        "count": 427281,
+        "probability": 0.00427281
+      },
+      {
+        "label": "50-100x",
+        "min": 50,
+        "count": 77494,
+        "probability": 0.00077494
+      },
+      {
+        "label": "100-500x",
+        "min": 100,
+        "count": 5946,
+        "probability": 5.946E-05
+      },
+      {
+        "label": "500x+",
+        "min": 500,
+        "count": 0,
+        "probability": 0
+      }
+    ]
+  },
+  "fullCycle": {
+    "combinations": 150186960,
+    "baseRtp": 0.7774788037523365,
+    "hitFrequency": 0.5384467599583879,
+    "maxWinMultiple": 76,
+    "elapsedSeconds": 7.5447551,
+    "scatterHistogram": [
+      89986923,
+      48865167,
+      10246041,
+      1036989,
+      50868,
+      972,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "buckets": [
+      {
+        "label": "0 (no win)",
+        "min": 0,
+        "count": 69319278,
+        "probability": 0.46155324004161213
+      },
+      {
+        "label": "0-1x",
+        "min": 1E-09,
+        "count": 43797262,
+        "probability": 0.29161827365038884
+      },
+      {
+        "label": "1-2x",
+        "min": 1,
+        "count": 19024217,
+        "probability": 0.12667023155672102
+      },
+      {
+        "label": "2-5x",
+        "min": 2,
+        "count": 13913006,
+        "probability": 0.09263790944300357
+      },
+      {
+        "label": "5-10x",
+        "min": 5,
+        "count": 3313836,
+        "probability": 0.022064738509921234
+      },
+      {
+        "label": "10-20x",
+        "min": 10,
+        "count": 712707,
+        "probability": 0.0047454652521097705
+      },
+      {
+        "label": "20-50x",
+        "min": 20,
+        "count": 89515,
+        "probability": 0.0005960237826240041
+      },
+      {
+        "label": "50-100x",
+        "min": 50,
+        "count": 17139,
+        "probability": 0.00011411776361942475
+      },
+      {
+        "label": "100-500x",
+        "min": 100,
+        "count": 0,
+        "probability": 0
+      },
+      {
+        "label": "500x+",
+        "min": 500,
+        "count": 0,
+        "probability": 0
+      }
+    ]
+  }
+}

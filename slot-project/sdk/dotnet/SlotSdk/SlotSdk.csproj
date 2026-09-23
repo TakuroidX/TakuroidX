@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- The source lives in the Unity package (../../package/Runtime). This project only builds it for .NET. -->
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RootNamespace>SlotSdk</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../package/Runtime/**/*.cs" />
+  </ItemGroup>
+</Project>
