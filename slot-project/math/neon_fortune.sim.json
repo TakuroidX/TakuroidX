@@ -3,7 +3,7 @@
     "id": "neon_fortune",
     "version": "1.0.0"
   },
-  "generatedAt": "2026-09-23T11:55:45Z",
+  "generatedAt": "2026-09-23T12:11:03Z",
   "verificationPassed": true,
   "theory": {
     "lineRtp": 0.7599589205347788,
@@ -27,7 +27,7 @@
     "avgFeatureWinMultiple": 25.146761659102562,
     "stdDev": 3.247249254654926,
     "maxRoundWinMultiple": 333.05,
-    "elapsedSeconds": 10.0052934,
+    "elapsedSeconds": 9.9272276,
     "buckets": [
       {
         "label": "0 (no win)",
@@ -96,7 +96,7 @@
     "baseRtp": 0.7774788037523365,
     "hitFrequency": 0.5384467599583879,
     "maxWinMultiple": 76,
-    "elapsedSeconds": 7.5447551,
+    "elapsedSeconds": 7.521123,
     "scatterHistogram": [
       89986923,
       48865167,
