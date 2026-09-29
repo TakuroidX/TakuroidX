@@ -2,6 +2,11 @@ Python tools and small experiments, built with AI.
 
 ## Projects
 
+**[evolve-lab](https://github.com/TakuroidX/evolve-lab)** (v1.0.0)
+A small, deterministic case study of a self-improving loop fooling itself, and the selection gates
+that caught it: held-out checks, time-split checks, and a look-ahead-leak demo. Pure Python, no
+dependencies.
+
 **[bitflyer-mcp](https://github.com/TakuroidX/bitflyer-mcp)**
 A read-only MCP server for bitFlyer's public market data: prices, order books, recent trades,
 and exchange status. It needs no API key and cannot place orders.
